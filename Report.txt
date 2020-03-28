@@ -1,6 +1,8 @@
 Report
 
 
+The following time milestones are hit:
+
  - 10:12 had the appropriate folders in place
    		 makefile + dockerfile + docker-compose with postgres container
 
@@ -29,3 +31,27 @@ Deviation, will allocate time in the debug phase to make the aiohttp work.
 	TODO: Refactor dataservice
 	TODO: solve bug in chatbotservice, make it work in docker
 	TODO: write tests
+
+- 14:10 updated README and report; TODO: the tasks from timestamp 13:50
+
+
+Assumptions:
+
+1) The project description did not specify that the Chatbot Service should send any data to the rest endpoint,
+	thus, the keyboard input is not sent to the endpoint; it is just consumed, and then a random resutl is displayed.
+
+2) The Data Service does not password protect the admin routes (where an user can insert new messages), thus it is accesible at the endpoint:
+	http://localhost:8000/chatmessages/
+
+Deviations:
+	It took me longer than expected to read the Django rest framework. and make the random endpoints work.
+	I Have duplicate classes in ```DataService/chat/views``` must refactor into one class that takes a value in the constructor
+	and resolves to the desired functionality.
+
+Future improvements:
+	
+	For the project: Sanitize the included files, unfortunately there are ```__pycache__`` files
+
+	For the backend: Write tests, refactor the view files
+
+	For the Frontend: I couldnt figure a better way to make the CLI app work inside docker

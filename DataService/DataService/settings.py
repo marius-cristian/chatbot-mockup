@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DataService.urls'
+ROOT_URLCONF = 'chat.urls'
 
 TEMPLATES = [
     {

@@ -3,7 +3,7 @@ from django.shortcuts import render
 from rest_framework import viewsets
 
 from .models import ChatMessage
-from .serializers import ChatMessageSerializer
+from .serializer import ChatMessageSerializer
 
 
 class BaseViewSet(viewsets.ModelViewSet):

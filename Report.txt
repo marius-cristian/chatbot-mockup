@@ -17,3 +17,6 @@ Deviation, will allocate time in the debug phase to make the aiohttp work.
 	the api calls into json
 
 - 11:50 django work, created chatmessage model-view-router, TODO expose the route /api/chatmessage
+
+- 12:40 django work, exposed /chatmessage route.
+

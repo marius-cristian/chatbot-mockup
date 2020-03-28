@@ -1,5 +1,7 @@
+IMAGE=chatbot/django:2
+
 build:
-	docker build data-service -t chatbot/django:1
+	docker build -t $(IMAGE) .
 
 create-project:
 	docker-compose run rest django-admin startproject DataService .

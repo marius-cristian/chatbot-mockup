@@ -39,4 +39,14 @@
 
 ## Deviation Report:
 	
-	Please constul ```Report.txt```
+	Please constult ```Report.txt```
+
+
+## Comments on DataService:
+	
+	Inside the DataService folder there are two directories:
+		* DataService - which contains the project scaffolding
+		* chat - which contains the chat project and routes
+
+
+

@@ -22,7 +22,7 @@ Deviation, will allocate time in the debug phase to make the aiohttp work.
 
 - 12:40 django work, exposed /chatmessage route.
 
-- 13:10 made the simpleclient io work outside docker; TODO: Containerize
+- 13:10 made the chatbotservice/simpleclient.py work outside docker; TODO: Containerize
 
 - 13:20 implementing the random functionality for backend
 
@@ -34,6 +34,11 @@ Deviation, will allocate time in the debug phase to make the aiohttp work.
 
 - 14:10 updated README and report; TODO: the tasks from timestamp 13:50
 
+
+- 14:40 TODO: Refactor DataService/chat/views.py There is duplicate code; there is an attempt with @action decorator
+		but unfortunately it yelds a compile error. Must spend more time on debugging.
+	  	TODO: Write tests; there are no written tests
+	  	TODO: For the server; read the config variables from ENV variables instead of hardcored settings; export them in docker;
 
 Assumptions:
 
@@ -52,6 +57,13 @@ Future improvements:
 	
 	For the project: Sanitize the included files, unfortunately there are ```__pycache__`` files
 
-	For the backend: Write tests, refactor the view files
+	For the backend: Write tests, refactor the view files in DataService/chat/views.py as there is a messy duplicate class.
 
 	For the Frontend: I couldnt figure a better way to make the CLI app work inside docker
+					  Make the frontend app work inside a docker container, there is a build error
+
+
+Milestones not met:
+	* Client is not containerized
+	* Tests are not written
+	* The backend chat/views and subsequently chat/urls are not refactored; there is duplicate code

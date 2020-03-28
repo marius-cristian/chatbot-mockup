@@ -1,0 +1,5 @@
+Report
+
+
+ - 10:12 had the appropriate folders in place
+   		 makefile + dockerfile + docker-compose with postgres container

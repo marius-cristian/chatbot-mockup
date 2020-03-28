@@ -2,7 +2,7 @@ version: '3'
 services:
   aiocli:
     build: .
-    command: gunicorn app:app -b :8080 --worker-class aiohttp.GunicornWebWorker --reload --access-logfile -
+    command: python simpleclient.py
     volumes:
       - .:/src
     ports:

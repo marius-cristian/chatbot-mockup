@@ -20,3 +20,12 @@ Deviation, will allocate time in the debug phase to make the aiohttp work.
 
 - 12:40 django work, exposed /chatmessage route.
 
+- 13:10 made the simpleclient io work outside docker; TODO: Containerize
+
+- 13:20 implementing the random functionality for backend
+
+- 13:50 random method is working, and it's displayed at chatbotservice level
+
+	TODO: Refactor dataservice
+	TODO: solve bug in chatbotservice, make it work in docker
+	TODO: write tests

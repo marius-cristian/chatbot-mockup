@@ -3,14 +3,13 @@ Operational Plan
 Setup containerized PostrgresSQL (15 - 30) min (V)
 Setup containerized Django       (15 - 30) min (V)
 
-Read aiohttp docs, and create a service (30-45) min (X - TODO Must debug)
+Read aiohttp docs, and create a service (30-45) min (V)
 
 Make the rest endpoints (15-30) min (.)
 
-Make the aiohttp service interact with the endpoints (15-30) min
+Make the aiohttp service interact with the endpoints (15-30) min (V)
 
 Write simple tests (15-30) min
-
 
 Debugging 2 h
 

@@ -11,7 +11,9 @@
 	
 	1. for the data service: ```cd DataService && make start-rest```
 
-	2. for the chatbotservice: ```cd chatbot && make start-chatbot```
+	~~2. for the chatbotservice: ```cd chatbot && make start-chatbot```~~
+
+	2. ```cd chatbot && python3 install -r requirements.txt && python3 simpleclient.py```
 
 
 ## How to add messages in the database:

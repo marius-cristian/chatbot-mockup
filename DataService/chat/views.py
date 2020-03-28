@@ -19,9 +19,10 @@ class ChatMessageViewset(BaseViewSet):
 
 
 # must refactor this, its duplicate code
+# I don know if its optimal (do not know what is happening
+# in django_random_queryset RandomManager under the hood)
 class RandomViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
-
         return self.model.objects.filter().random()
 
 

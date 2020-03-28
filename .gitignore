@@ -1,2 +1,3 @@
 ./DataService/*/__pycache__/*
 ./ChatbotService/*/__pycache__/*
+./DataService/migrations/*

@@ -4,6 +4,6 @@ services:
     build: .
     command: python simpleclient.py
     volumes:
-      - .:/src
+      - .:/app
     ports:
       - "8080:8080"

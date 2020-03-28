@@ -5,3 +5,5 @@ Report
    		 makefile + dockerfile + docker-compose with postgres container
 
  - 10:30 django2 containerized, modified to connect with postgres 				container
+
+ - 11:00 aiohttp simple http - project structure, not working yet

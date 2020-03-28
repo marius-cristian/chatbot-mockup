@@ -2,17 +2,20 @@ import aiohttp
 import asyncio
 import ujson
 
-async def work():
-    # blocking call
-    value = input("Chat here:\n")
-    # did not implement http post due to lax project requirements
-    # more details in Report.txt
+# endpoint should be as string, post_process a function
+async def getJson(api_endpoint, post_process):
     async with aiohttp.ClientSession() as session:
-        async with session.get('http://localhost:8000/random') as resp:
+        async with session.get(api_endpoint) as resp:
             data = await resp.json()
-            # TODO figure a better way to make this deserialization
-            print(data["data"][0]["attributes"]["content"])
-    print ("ok")
+            return post_process(data)
+
+
+async def work():
+    while (True):
+        # blocking call
+        value = input("Chat here:\n")
+        await getJson('http://localhost:8000/random', lambda x : print (x["data"][0]["attributes"]["content"]))
+
 
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()

@@ -1,16 +1,18 @@
 version: '3'
 services:
-  mongo:
+  db:
     image: postgres:latest
-    ports:
-      - 54320:5432
+    #ports:
+    #  - 54320:5432
     volumes:
         - ~/db:/data/db
-  # haskell:
-    # image: chatbot/django:1
-    # command: python3 manage.py runserver 0.0.0.0:8000
-    # ports:
-      # - 80:8000
-    # volumes:
-      # - .:/app
-      # -  ~/.root:/root
+
+  rest:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db

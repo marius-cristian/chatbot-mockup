@@ -3,3 +3,5 @@ Report
 
  - 10:12 had the appropriate folders in place
    		 makefile + dockerfile + docker-compose with postgres container
+
+ - 10:30 django2 containerized, modified to connect with postgres 				container
